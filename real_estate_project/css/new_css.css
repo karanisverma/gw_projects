@@ -1,0 +1,103 @@
+@font-face {
+        font-family:tregular;
+        src: url(font/Titillium-Regular.otf);
+}
+.tregular{
+    font-family:tregular;
+}
+@font-face {
+        font-family:tlight;
+        src: url(font/TTitillium-Light.otf);
+}
+.tlight{
+    font-family:tlight;
+}
+@font-face {
+        font-family:tbold;
+        src: url(font/Titillium-Bold.otf);
+}
+.tbold{
+    font-family:tbold;
+}
+
+@font-face {
+        font-family:lato_light;
+        src: url(font/Lato-Light.ttf);
+}
+.lato_light{
+    font-family:lato_light;
+}
+
+@font-face {
+        font-family:lato_black;
+        src: url(font/Lato-Black.ttf);
+
+}
+.lato_black{
+    font-family:lato_black;
+
+}
+
+@font-face {
+        font-family:lato_litittalic;
+        src: url(font/Lato-LightItalic.ttf);
+}
+.lato_litittalic{
+    font-family:lato_litittalic;
+}
+
+@font-face {
+        font-family:source_regular;
+        src: url(font/SourceSansPro-Regular.otf);
+}
+.source_regular{
+    font-family:source_regular;
+}
+
+@font-face {
+        font-family:source_bold;
+        src: url(font/SourceSansPro-Bold.otf);
+}
+.source_bold{
+    font-family:source_bold;
+}
+
+@font-face {
+        font-family:source_light;
+        src: url(font/SourceSansPro-Light.otf);
+}
+.source_light{
+    font-family:source_light;
+}
+
+@font-face {
+        font-family:source_extra_light;
+        src: url(font/SourceSansPro-ExtraLight.otf);
+}
+.source_extra_light{
+    font-family:source_extra_light;
+}
+
+@font-face {
+        font-family:source_semibold;
+        src: url(font/SourceSansPro-Semibold.otf);
+}
+.source_semibold{
+    font-family:source_semibold;
+}
+
+@font-face {
+        font-family:source_black;
+        src: url(font/SourceSansPro-Black.otf);
+}
+.source_black{
+    font-family:source_black;
+}
+
+@font-face {
+        font-family:source_it;
+        src: url(font/SourceSansPro-It.otf);
+}
+.source_it{
+    font-family:source_it;
+}

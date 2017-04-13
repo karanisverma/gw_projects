@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
     <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -242,7 +243,10 @@
         <!-- ----------------------------------map page------------------------------------------ -->
         <div class="section" data-anchor="mapPage">
             <div class="container col-md-12 col-sm-12 col-xs-12">
-                <div id="counter"></div>
+                <div id="counter">
+                    <div> <span class="num_counter" style="display: inline-block; width: 32%">52,147</span> <span class="counter" style="display: inline-block; width: 32%">1.9583</span> <span class="counter" style="display: inline-block; width: 32%">12345</span> </div>
+
+                </div>
                 <div id="map"></div>
      <!--            <div class="col-md-4 col-sm-4 col-xs-12 text-center seventh_page_right">
                     <p class="fourth_pag_inner1 source_extra_light">TEST TEST This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
@@ -278,6 +282,10 @@
                     </div>
                 </div>
             </footer>
+            
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
             <script type="text/javascript">
             $(function() {
                 $(".fourth_page_imag, .sixth_page_imag").on({
@@ -416,6 +424,14 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yN08oRF6tQYe4F1qbNiIlHY7toTM3ts&callback=initMap"
     async defer></script>
+    <script>
+    jQuery(document).ready(function( $ ) {
+        $('.num_counter').counterUp({
+            delay: 1000,
+            time: 10000
+        });
+    });
+</script>
         </div>
     </div>
 </body>

@@ -1,7 +1,16 @@
 .navbar-toggle {
     border-color: white;
 }
-
+#map{
+    height: 50%;
+}
+#counter{
+    height: 50%;
+}
+.container{
+    height: 100%;
+    padding:0;
+}
 .navbar-toggle .icon-bar {
     background: white;
 }
@@ -353,6 +362,7 @@ span.text-center.contact_inner3.source_light {
         display: none;
     }
 }
+
 
 
 /*.videoContainer 

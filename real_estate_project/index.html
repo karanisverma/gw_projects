@@ -27,7 +27,7 @@
     $(document).ready(function() {
         $('#fullpage').fullpage({
             sectionsColor: [],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', 'lastPage'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage','mapPage', 'lastPage'],
             menu: '#menu',
             responsiveHeight: 650
         });
@@ -238,6 +238,21 @@
                     <img src="image/share.png" class="share3">
                 </div>
             </div>
+        </div>        
+        <!-- ----------------------------------map page------------------------------------------ -->
+        <div class="section" data-anchor="mapPage">
+            <div class="container col-md-12 col-sm-12 col-xs-12">
+                <div id="counter"></div>
+                <div id="map"></div>
+     <!--            <div class="col-md-4 col-sm-4 col-xs-12 text-center seventh_page_right">
+                    <p class="fourth_pag_inner1 source_extra_light">TEST TEST This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                    <p class="fourth_pag_inner2 source_light">Green Living - One Lakh Trees & Water Bodies</p>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12 seventh_page_div">
+                    <img src="image/image9.jpg" class="seventh_page_imag">
+                    <img src="image/share.png" class="share3">
+                </div> -->
+            </div>
         </div>
         <!-- <a href="#" class="backTOtop"><img src="image/top1.png" alt="top"/></a> -->
         <!-- ----------------------contact---------------------------- -->
@@ -292,6 +307,115 @@
 
             });
             </script>
+               <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 12.9716, lng: 77.5946},
+          zoom: 12,
+          scaleControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+          styles: [
+  {
+    "featureType": "administrative",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#444444"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "stylers": [
+      {
+        "color": "#f2f2f2"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "stylers": [
+      {
+        "saturation": -100
+      },
+      {
+        "lightness": 45
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#e73408"
+      },
+      {
+        "weight": 0.5
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#b0b0b0"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "color": "#46bcec"
+      },
+      {
+        "visibility": "on"
+      }
+    ]
+  }
+]
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yN08oRF6tQYe4F1qbNiIlHY7toTM3ts&callback=initMap"
+    async defer></script>
         </div>
     </div>
 </body>

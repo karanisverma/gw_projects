@@ -1,0 +1,290 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "insatll",
+		"selected_items":
+		[
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Suprabha/Downloads/work/gw_projects"
+	],
+	"file_history":
+	[
+		"/Users/Suprabha/Projects/web/.npmrc",
+		"/Users/Suprabha/Projects/web/config/routes.rb",
+		"/Users/Suprabha/Projects/web/app/views/layouts/_footer.haml",
+		"/Users/Suprabha/Projects/web/app/views/main/referral_signup.haml",
+		"/Users/Suprabha/Projects/admin/app/models/cargroups_city.rb",
+		"/Users/Suprabha/Projects/admin/app/models/zone.rb",
+		"/Users/Suprabha/Projects/web/app/views/gift_cards/status.haml",
+		"/Users/Suprabha/Projects/admin/Gemfile"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"projects/web/app",
+			"project/web/app",
+			"web",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"current_user.name",
+			"signupCallback",
+			"sign_up_call",
+			"verifyMobile",
+			"verifyMobile\\",
+			"refinputPhoneError",
+			"UserBar",
+			"user_name_header",
+			"#Header",
+			"Header",
+			"#Header",
+			"Header",
+			"04_header_loggedin",
+			"#profile_icon",
+			"20px",
+			"current_user",
+			"if current_user.nil?",
+			"post 'dc_redeem'",
+			"referralForm",
+			"checkJquery_refSignup",
+			"different",
+			"ipl_",
+			"background-image",
+			"bg_img",
+			"LP3.jpg",
+			"ref_signup_body",
+			"assets",
+			"lazy",
+			"airport",
+			"city.link_name"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "gw_projects.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"webdatab",
+				"web/config/database.yml"
+			],
+			[
+				"admindatab",
+				"admin/config/database.yml"
+			],
+			[
+				"admindevelopment.rb",
+				"admin/config/environments/development.rb"
+			],
+			[
+				".npmrc",
+				"web/.npmrc"
+			],
+			[
+				"referalsignup",
+				"web/app/views/main/referral_signup.haml"
+			],
+			[
+				"header.haml",
+				"web/app/views/layouts/_header.haml"
+			],
+			[
+				"routes",
+				"web/config/routes.rb"
+			],
+			[
+				"main_controller.rb",
+				"web/app/controllers/main_controller.rb"
+			],
+			[
+				"crick",
+				"web/app/views/main/cricket_fever.haml"
+			],
+			[
+				"main.scss",
+				"web/app/assets/stylesheets/sass/main.scss.erb"
+			],
+			[
+				"footer.haml",
+				"web/app/views/layouts/_footer.haml"
+			],
+			[
+				"common.js",
+				"web/app/assets/javascripts/common.js.erb"
+			],
+			[
+				"status",
+				"web/app/views/users/status.haml"
+			],
+			[
+				"status.haml",
+				"web/app/views/gift_cards/status.haml"
+			],
+			[
+				"webdata",
+				"web/config/database.yml"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

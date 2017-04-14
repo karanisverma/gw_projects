@@ -14,7 +14,32 @@
     <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+
+    <script>
+// jQuery(document).ready(function( $ ) {
+//     $('#counter').waypoint(function() {
+
+// });
+// });
+// $('#counter').parents().hasClass('active')
+   
+
+
+   // $(window).scroll(function() {
+   //  console.log('adsfkadlsfjasdlkfjadslkfjadslkf')
+   //  if ($('#counter').parents().hasClass('active')) {
+   //         $('.num_counter').counterUp({
+   //              delay: 1000,
+   //              time: 100000
+   //              });
+   //  }
+// });
+</script>
+
+
     <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -31,7 +56,15 @@
             sectionsColor: [],
             anchors: ['Homepage', 'PropertyVideo', 'WhyUs', 'ImageGallery', 'ImageGallery1', 'ImageGallery2', 'ImageGallery3', 'ImageGallery4','CounterMap', 'ContactUs'],
             menu: '#menu',
-            responsiveHeight: 650
+            responsiveHeight: 650,
+            afterLoad: function(anchorLink, index){
+                if (anchorLink == 'CounterMap'){
+                    $('.num_counter').counterUp({
+                        delay: 10,
+                        time: 1000
+                        });
+                }
+            }
         });
 
     });
@@ -245,7 +278,10 @@
         <div class="section" data-anchor="CounterMap">
             <div class="container col-md-12 col-xs-12">
                 <div id="counter">
-                    <div> <span class="num_counter" style="display: inline-block; width: 32%">52,147</span> <span class="counter" style="display: inline-block; width: 32%">1.9583</span> <span class="counter" style="display: inline-block; width: 32%">12345</span> </div>
+                    <div> 
+                    <span class="num_counter" style="display: inline-block; width: 32%">52,147</span> 
+                    <span class="num_counter" style="display: inline-block; width: 32%">1.9583</span> 
+                    <span class="num_counter" style="display: inline-block; width: 32%">12345</span> </div>
 
                 </div>
                 <div id="map"></div>
@@ -280,8 +316,7 @@
 </body>
 </html>
             
-<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yN08oRF6tQYe4F1qbNiIlHY7toTM3ts&callback=initMap"
 async defer></script>
 
@@ -322,11 +357,7 @@ console.log($(window).height());
 $("iframe").css('min-height', '667px');
 </script>
 
-<script>
-jQuery(document).ready(function( $ ) {
-$('.num_counter').counterUp({
-    delay: 1000,
-    time: 10000
-});
-});
-</script>
+
+
+
+

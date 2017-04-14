@@ -312,6 +312,13 @@ span.text-center.contact_inner3.source_light {
   height: 100%;
 }
 
+/* Gallery Slider CSS */
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*-----------------------------media query---------------------------------------*/
 @media only screen and (max-width: 768px) {
 

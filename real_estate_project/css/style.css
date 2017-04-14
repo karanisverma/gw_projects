@@ -158,7 +158,7 @@ p.third_page_inner1 {
 }
 
 p.third_page_inner2 {
-  font-size: 16px;
+  font-size: 19px;
   color: #636363;
   line-height: 25px;
 }
@@ -179,6 +179,9 @@ img.why-us-circle {
 p.third_page_inner4 {
   font-size: 18px;
   color: #636363;
+}
+.whyus_box{
+  margin: 20% 0;
 }
 
 /*--------------------------fourth page---------------------------------*/
@@ -318,33 +321,41 @@ span.text-center.contact_inner3.source_light {
   background-position: center;
   background-repeat: no-repeat;
 }
+.carousel-control svg{
+  margin-top: 18em;
+}
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+}
 
 /*-----------------------------media query---------------------------------------*/
 @media only screen and (max-width: 768px) {
-
-.frst_page_inr2 img{
-  width: 65px;
-}
-h1{
-  font-size: 32px;
-}
-.button_first_page{
-  width: 190px;
-  margin-top: 38%;
-}
-.fourth_page, .sixth_page,.fifth_page, .seventh_page, .second_page{
-  display: block;
-}
-.video-player, .fifth_page_div{
-  padding: 0;
-}
-.sixth-page-image{
-  margin-top: 15%;
-}
-p.contct_inner2{
-  font-size: 32px;
-}
-.col-xs-12{
-  padding: 10px 1px;
-}
+  .frst_page_inr2 img{
+    width: 65px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .button_first_page{
+    width: 190px;
+    margin-top: 38%;
+  }
+  .fourth_page, .sixth_page,.fifth_page, .seventh_page, .second_page{
+    display: block;
+  }
+  .video-player, .fifth_page_div{
+    padding: 0;
+  }
+  .sixth-page-image{
+    margin-top: 15%;
+  }
+  p.contct_inner2{
+    font-size: 32px;
+  }
+  .col-xs-12{
+    padding: 10px 1px;
+  }
+  .carousel-control svg{
+    margin-top: 14em;
+  }
 }

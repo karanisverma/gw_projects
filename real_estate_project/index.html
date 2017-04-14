@@ -4,7 +4,7 @@
 <head>
     <title>New White Field</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image/image2.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="image/googlewiki_logo.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/new_css.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     
     <script>
     (function(d, s, id) {
@@ -36,13 +37,14 @@
     });
     </script>
 </head>
-
 <body>
     <div id="fullpage">
         <div class="section">
             <div class="container col-md-12 col-sm-12 col-xs-12 first_page">
                 <div class="col-md-12 col-sm-12 col-xs-12 frst_page_inr2">
-                    <div class="col-md-8 col-sm-8 col-xs-4"></div>
+                    <div class="col-md-8 col-sm-8 col-xs-4">
+                        <a href="http://googlewiki.in" title="comopany link"><img src="image/white_logo.png" alt="company logo"></a> 
+                    </div>
                     <div class="col-md-4 col-sm-4 col-xs-8">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,7 +63,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="image/image2.png" class="center-block logo">
+                
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-md-10 col-sm-10 col-xs-12">
                     <p class="first_page_inner1 source_extra_light text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
@@ -71,7 +73,7 @@
                         </a>
                     </div>
                     <a href="#secondPage">
-                        <img src="image/arrow.png" class="center-block arrow_frst_pag blink"></a>
+                        <img src="image/arrow.png" class="center-block scroll-down-hint blink" alt="scrollbar"></a>
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
             </div>
@@ -79,78 +81,15 @@
         <!-- ---------------------------second page------------------------------- -->
         <div class="section" data-anchor="secondPage">
             <div class="container col-md-12 col-sm-12 col-xs-12 second_page" id="second">
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center second_page_lft">
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center video-paragraph">
                     <p class="second_pag_inner1 source_light">North East Bangalore Developments</p>
                     <p class="second_pag_inner2 source_light">In News</p>
                     <div class="button_second_page center-block text-center">
                         <p class="source_regular">VIEW PRESS RELEASE</p>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-8 col-xs-12 second_page_div">
+                <div class="col-md-8 col-sm-8 col-xs-12 video-player">
                     <div id="player"></div>
-                    <img src="image/image14.png" class="secnd_pag_utub">
-                    <script type="text/javascript">
-                    var tag = document.createElement('script');
-                    tag.src = "http://www.youtube.com/iframe_api";
-                    var firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                    var player;
-
-                    onYouTubeIframeAPIReady = function() {
-                        player = new YT.Player('player', {
-                            height: '670px',
-                            width: '100%',
-                            videoId: 'J4rBDsimsmQ', // youtube video id
-                            playerVars: {
-                                'autoplay': 0,
-                                'rel': 0,
-                                'showinfo': 0,
-                                'modestbranding': 1,
-                                'autohide': 2,
-                                'border': 0,
-
-                                'enablejsapi': 1,
-                                'controls': 2
-
-
-
-                            },
-                            events: {
-                                'onStateChange': onPlayerStateChange
-                            }
-                        });
-                    }
-
-                    onPlayerStateChange = function(event) {
-                        if (event.data == YT.PlayerState.ENDED) {
-                            $('.secnd_pag_utub').fadeIn('normal');
-                        }
-                    }
-
-                    $(document).on('click', '.secnd_pag_utub', function() {
-                        $(this).fadeOut('normal');
-                        player.playVideo();
-                    });
-                    </script>
-                    <script type="text/javascript">
-                    var blink = function() {
-                        $('.blink').animate({
-                            opacity: '0'
-                        }, function() {
-                            $(this).animate({
-                                opacity: '1'
-                            }, blink);
-                        });
-                    }
-
-                    blink();
-                    </script>
-                    <script>
-                    console.log($(window).height());
-
-                    $("iframe").css('min-height', '667px');
-                    </script>
                 </div>
             </div>
         </div>
@@ -167,19 +106,19 @@
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12 center-block text-center">
-                    <img src="image/image4.png" class="third_page_circl">
+                    <img src="image/image4.png" class="why-us-circle" alt="Price">
                     <p class="third_page_inner3 source_light">Price</p>
                     <p class="third_page_inner4 source_light">So that normal people can afford</p>
-                    <img src="image/image6.png" class="third_page_circl">
+                    <img src="image/image6.png" class="why-us-circle". alt="World Class Product">
                     <p class="third_page_inner3 source_light">Communication</p>
                     <p class="third_page_inner4 source_light">Good transport facility</p>
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-md-4 col-sm-4 col-xs-12 center-block text-center third_rit_pag">
-                    <img src="image/image5.png" class="third_page_circl">
+                    <img src="image/image5.png" class="why-us-circle" alt="Communication">
                     <p class="third_page_inner3 source_light">World Class Product</p>
                     <p class="third_page_inner4 source_light">See ir to believe</p>
-                    <img src="image/image7.png" class="third_page_circl">
+                    <img src="image/image7.png" class="why-us-circle" alt="Popularity">
                     <p class="third_page_inner3 source_light">Popularity</p>
                     <p class="third_page_inner4 source_light">Well appreciated by all</p>
                 </div>
@@ -191,8 +130,8 @@
             <div class="container col-md-12 col-sm-12 col-xs-12 fourth_page">
                 <div class="col-md-8 col-sm-8 col-xs-12 fourth_page_div">
                     <div class="overlay_content">
-                        <img src="image/image8.jpg" class="fourth_page_imag">
-                        <img src="image/share.png" class="share1">
+                        <img src="image/image8.jpg" class="fourth-page-image" alt="Hall Picture">
+                        <img src="image/share.png" class="share1" alt="Share">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center fourth_page_right">
@@ -209,8 +148,8 @@
                     <p class="fourth_pag_inner2 fourth_pag_inner2_2 source_light">Right on Bangalore- Chennai Express way</p>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 fifth_page_div">
-                    <img src="image/image9.jpg" class="fifth_page_imag">
-                    <img src="image/share.png" class="share2">
+                    <img src="image/image9.jpg" class="fifth-page-image" alt="Balcony Image">
+                    <img src="image/share.png" class="share2" alt="share">
                 </div>
             </div>
         </div>
@@ -218,7 +157,7 @@
         <div class="section" data-anchor="6thPage">
             <div class="container col-md-12 col-sm-12 col-xs-12 sixth_page">
                 <div class="col-md-8 col-sm-8 col-xs-12 sixth_page_div">
-                    <img src="image/image8.jpg" class="sixth_page_imag">
+                    <img src="image/image8.jpg" class="sixth-page-image">
                     <img src="image/share.png" class="share1">
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12 text-center sixth_page_right">
@@ -235,7 +174,7 @@
                     <p class="fourth_pag_inner2 source_light">Green Living - One Lakh Trees & Water Bodies</p>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12 seventh_page_div">
-                    <img src="image/image9.jpg" class="seventh_page_imag">
+                    <img src="image/image9.jpg" class="seventh-page-image">
                     <img src="image/share.png" class="share3">
                 </div>
             </div>
@@ -248,27 +187,18 @@
 
                 </div>
                 <div id="map"></div>
-     <!--            <div class="col-md-4 col-sm-4 col-xs-12 text-center seventh_page_right">
-                    <p class="fourth_pag_inner1 source_extra_light">TEST TEST This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                    <p class="fourth_pag_inner2 source_light">Green Living - One Lakh Trees & Water Bodies</p>
-                </div>
-                <div class="col-md-8 col-sm-8 col-xs-12 seventh_page_div">
-                    <img src="image/image9.jpg" class="seventh_page_imag">
-                    <img src="image/share.png" class="share3">
-                </div> -->
             </div>
         </div>
         <!-- <a href="#" class="backTOtop"><img src="image/top1.png" alt="top"/></a> -->
         <!-- ----------------------contact---------------------------- -->
         <div class="section fp-auto-height" data-anchor="lastPage">
-            <!-- <div id="contact"> -->
             <footer>
                 <div class="container col-md-12 col-sm-12 col-xs-12 footer_page">
                     <p class="contact_inner1 text-center source_light">Contact Us</p>
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12 center-block text-center">
                         <img src="image/image13.png">
-                        <p class="source_extra_light contct_inner2">+91 7090037073</p>
+                        <p class="source_extra_light contct_inner2">+91 1234567890</p>
                     </div>
                     <div class="col-md-2 col-sm-2"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12 center-block text-cente">
@@ -282,158 +212,29 @@
                     </div>
                 </div>
             </footer>
-            
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 
-            <script type="text/javascript">
-            $(function() {
-                $(".fourth_page_imag, .sixth_page_imag").on({
-                    mouseenter: function() {
-                        $(this).attr('src', 'image/image8_1.jpg');
-                        $(this).css('transition', '2s');
-                    },
-                    mouseleave: function() {
-                        $(this).attr('src', 'image/image8.jpg');
-                        $(this).css('transition', '2s');
-                    }
-                });
-
-            });
-
-            $(function() {
-                $(".seventh_page_imag, .fifth_page_imag").on({
-                    mouseenter: function() {
-                        $(this).attr('src', 'image/image9_1.jpg');
-                        $(this).css('transition', '2s');
-                    },
-                    mouseleave: function() {
-                        $(this).attr('src', 'image/image9.jpg');
-                        $(this).css('transition', '2s');
-                    }
-                });
-
-            });
-            </script>
-               <script>
-      function initMap() {
-        // Styles a map in night mode.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 12.9716, lng: 77.5946},
-          zoom: 12,
-          scaleControl: false,
-          zoomControl: false,
-          scrollwheel: false,
-          styles: [
-  {
-    "featureType": "administrative",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#444444"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape",
-    "stylers": [
-      {
-        "color": "#f2f2f2"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "stylers": [
-      {
-        "saturation": -100
-      },
-      {
-        "lightness": 45
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#e73408"
-      },
-      {
-        "weight": 0.5
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "stylers": [
-      {
-        "visibility": "simplified"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#b0b0b0"
-      }
-    ]
-  },
-  {
-    "featureType": "transit",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "stylers": [
-      {
-        "color": "#46bcec"
-      },
-      {
-        "visibility": "on"
-      }
-    ]
-  }
-]
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yN08oRF6tQYe4F1qbNiIlHY7toTM3ts&callback=initMap"
-    async defer></script>
-    <script>
-    jQuery(document).ready(function( $ ) {
-        $('.num_counter').counterUp({
-            delay: 1000,
-            time: 10000
-        });
-    });
-</script>
         </div>
     </div>
 </body>
-
 </html>
+            
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7yN08oRF6tQYe4F1qbNiIlHY7toTM3ts&callback=initMap"
+async defer></script>
+
+<script type="text/javascript">
+blink();
+console.log($(window).height());
+
+$("iframe").css('min-height', '667px');
+</script>
+
+<script>
+jQuery(document).ready(function( $ ) {
+$('.num_counter').counterUp({
+    delay: 1000,
+    time: 10000
+});
+});
+</script>

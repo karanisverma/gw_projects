@@ -17,6 +17,16 @@ h3 span {
     background: #fff;
     padding: 0 10px;
 }
+.backTOtop{
+  /*position: relative;*/
+  display: block;
+}
+img.top_button{
+  position: absolute;
+  bottom: 0;
+  right: 3em;
+
+}
 #counter h3 {
     position: relative;
     top: 1.5em;

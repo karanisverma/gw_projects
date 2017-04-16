@@ -89,10 +89,11 @@ a:hover {
     transition: color 1s;
 }
 h1 {
-    font-size: 52px;
+    font-size: 42px;
     color: white;
     padding-top: 5em;
     text-align: center;
+    font-family: source_extra_light;
 }
 .button_first_page {
     width: 260px;
@@ -279,6 +280,12 @@ img.fifth-page-image {
 }
 /*--------------------contact-----------------------------------*/
 
+.map_marker a{
+  position: static; 
+  overflow: visible; 
+  float: none; 
+  display: inline;
+}
 .footer_page {
     background: #282828;
     padding: 1.8em 0px;
@@ -347,7 +354,7 @@ span.text-center.contact_inner3.source_light {
         width: 65px;
     }
     h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
     h3{
       font-size: 11px;

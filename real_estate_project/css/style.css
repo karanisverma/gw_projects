@@ -389,12 +389,17 @@ span.text-center.contact_inner3.source_light {
     }
 }
 
-.map_icon a{
-    position: static; 
-    overflow: visible; 
-    float: none; 
-    display: inline;
+.social_media ul {
+    display: flex;
+    justify-content: center;
 }
+.social_media li {
+    margin: 0 20px;
+}
+.social_media a{
+    cursor: pointer;
+}
+
 /*-----------------------------media query---------------------------------------*/
 
 @media only screen and (max-width: 1440px) {
@@ -460,6 +465,12 @@ span.text-center.contact_inner3.source_light {
         margin-top: 14em;
     }
     img.top_button {
-        right: 0;
+        display: none;
+    }
+    .social_media ul{
+        padding: 0;
+    }
+    .social_media li {
+        margin: 0 16px;
     }
 }

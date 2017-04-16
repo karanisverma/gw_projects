@@ -8,6 +8,7 @@
     background: rgba(27, 26, 26, 0.59);
     z-index: 9;
 }
+
 #map {
     height: 50%;
 }
@@ -104,16 +105,17 @@ h1 {
     padding-top: 11px;
     cursor: pointer;
 }
+li.active{
+  background: black;
+}
 span.menu_homepage {
     color: white;
     font-size: 15px;
 }
 .navbar-nav>li>a{
-  padding-top: 35px;
+      padding: 30px 10px 30px 10px;
 }
-span.active_menu {
-    color: #a8aeb5;
-}
+
 span.menu_homepage:hover,
 span.menu_homepage:focus,
 span.menu_homepage:active {
@@ -353,6 +355,9 @@ span.text-center.contact_inner3.source_light {
     .frst_page_inr2 img {
         width: 65px;
     }
+    .navbar-nav>li>a {
+    padding: 13px 7px 13px 7px;
+}
     h1 {
         font-size: 30px;
     }

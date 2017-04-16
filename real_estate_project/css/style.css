@@ -399,7 +399,16 @@ span.text-center.contact_inner3.source_light {
 .social_media a{
     cursor: pointer;
 }
+a svg #facebook, a svg #twitter, a svg #instagram{
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
 
+a svg:hover #facebook, a svg:hover #twitter, a svg:hover #instagram{
+    fill: #d6a010;
+}
 /*-----------------------------media query---------------------------------------*/
 
 @media only screen and (max-width: 1440px) {

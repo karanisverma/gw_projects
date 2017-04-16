@@ -28,8 +28,9 @@ $(function() {
 
 function initMap() {
         // Styles a map in night mode.
+  var location =  {lat: 12.9716, lng: 77.5946}
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 12.9716, lng: 77.5946},
+    center: location ,
     zoom: 12,
     scaleControl: false,
     zoomControl: false,
@@ -130,6 +131,13 @@ function initMap() {
 	  }
 	]
 	});
+
+
+     var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          icon: 'image/marker.png',
+        });
 }
 
 // for videop player

@@ -1,6 +1,13 @@
 .navbar-toggle {
     border-color: white;
 }
+#header{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: rgba(27, 26, 26, 0.59);
+    z-index: 9;
+}
 #map {
     height: 50%;
 }
@@ -35,10 +42,9 @@ img.top_button{
     font-size: 3em;
 }
 #counter {
-    height: 50%;
+    height: 60%;
 }
 #counter ul {
-    height: 50%;
     padding: 0;
     top: 25%;
     position: relative;
@@ -85,7 +91,7 @@ a:hover {
 h1 {
     font-size: 52px;
     color: white;
-    padding-top: 2em;
+    padding-top: 5em;
     text-align: center;
 }
 .button_first_page {
@@ -99,7 +105,10 @@ h1 {
 }
 span.menu_homepage {
     color: white;
-    font-size: 14px;
+    font-size: 15px;
+}
+.navbar-nav>li>a{
+  padding-top: 35px;
 }
 span.active_menu {
     color: #a8aeb5;
@@ -119,9 +128,6 @@ span.menu_homepage:active {
     transition: 1s;
     border-color: #a8aeb5;
     box-shadow: 0px 0px 7px 1px #151515;
-}
-.frst_page_inr2 {
-    margin-top: 1em;
 }
 img.logo {
     position: relative;
@@ -343,10 +349,22 @@ span.text-center.contact_inner3.source_light {
     h1 {
         font-size: 32px;
     }
+    h3{
+      font-size: 11px;
+    }
+    #counter {
+    height: auto;
+    }
+    #map {
+    height: 20em;
+    }
     .button_first_page {
         width: 190px;
         margin-top: 38%;
     }
+    h3 span {
+    padding: 0 2px;
+}
     .fourth_page,
     .sixth_page,
     .fifth_page,
@@ -369,5 +387,8 @@ span.text-center.contact_inner3.source_light {
     }
     .carousel-control svg {
         margin-top: 14em;
+    }
+    img.top_button{
+      right: 0;
     }
 }

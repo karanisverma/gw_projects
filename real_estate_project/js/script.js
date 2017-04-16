@@ -174,17 +174,3 @@ var tag = document.createElement('script');
       if (event.data == YT.PlayerState.ENDED) {
       }
   }
-
-
-// Homepage button 
-
-var blink = function() {
-  $('.blink').animate({
-     opacity: '0'
-  }, function() {
-  $(this).animate({
-    opacity: '1'
-  }, blink);
-  });
-}
-

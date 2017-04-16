@@ -1,14 +1,13 @@
 .navbar-toggle {
     border-color: white;
 }
-#header{
+#header {
     position: fixed;
     display: block;
     width: 100%;
     background: rgba(27, 26, 26, 0.59);
     z-index: 9;
 }
-
 #map {
     height: 50%;
 }
@@ -25,19 +24,19 @@ h3 span {
     background: #fff;
     padding: 0 10px;
 }
-.backTOtop{
-  /*position: relative;*/
-  display: block;
+.backTOtop {
+    /*position: relative;*/
+    
+    display: block;
 }
-img.top_button{
-  position: absolute;
-  bottom: 0;
-  right: 3em;
-
+img.top_button {
+    position: absolute;
+    bottom: 0;
+    right: 3em;
 }
 #counter h3 {
     position: relative;
-    top: 1.5em;
+    top: 6em;
 }
 .num_counter {
     font-size: 3em;
@@ -47,7 +46,7 @@ img.top_button{
 }
 #counter ul {
     padding: 0;
-    top: 25%;
+    top: 40%;
     position: relative;
 }
 #counter ul li {
@@ -94,7 +93,6 @@ h1 {
     color: white;
     padding-top: 5em;
     text-align: center;
-    font-family: source_extra_light;
 }
 .button_first_page {
     width: 260px;
@@ -105,17 +103,16 @@ h1 {
     padding-top: 11px;
     cursor: pointer;
 }
-li.active{
-  background: black;
+li.active {
+    background: black;
 }
 span.menu_homepage {
     color: white;
     font-size: 15px;
 }
-.navbar-nav>li>a{
-      padding: 30px 10px 30px 10px;
+.navbar-nav>li>a {
+    padding: 30px 10px 30px 10px;
 }
-
 span.menu_homepage:hover,
 span.menu_homepage:focus,
 span.menu_homepage:active {
@@ -193,6 +190,7 @@ img.secnd_pag_utub {
 p.third_page_inner1 {
     font-size: 36px;
     color: #636363;
+    margin-top: 9%;
 }
 p.third_page_inner2 {
     font-size: 19px;
@@ -282,12 +280,6 @@ img.fifth-page-image {
 }
 /*--------------------contact-----------------------------------*/
 
-.map_marker a{
-  position: static; 
-  overflow: visible; 
-  float: none; 
-  display: inline;
-}
 .footer_page {
     background: #282828;
     padding: 1.8em 0px;
@@ -349,34 +341,101 @@ span.text-center.contact_inner3.source_light {
 .carousel-control.right {
     background-image: none;
 }
+.blink {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.map_icon a{
+    position: static; 
+    overflow: visible; 
+    float: none; 
+    display: inline;
+}
 /*-----------------------------media query---------------------------------------*/
+
+@media only screen and (max-width: 1440px) {
+    #counter {
+        height: 77%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .frst_page_inr2 img {
         width: 65px;
     }
-    .navbar-nav>li>a {
-    padding: 13px 7px 13px 7px;
-}
-    h1 {
-        font-size: 30px;
+    #counter h3 {
+        position: relative;
+        top: 1em;
     }
-    h3{
-      font-size: 11px;
+    p.third_page_inner1{
+        margin-top: 0;
+    }
+    .navbar-nav>li>a {
+        padding: 13px 7px 13px 7px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 11px;
     }
     #counter {
-    height: auto;
+        height: auto;
     }
     #map {
-    height: 20em;
+        height: 20em;
     }
     .button_first_page {
         width: 190px;
         margin-top: 38%;
     }
     h3 span {
-    padding: 0 2px;
-}
+        padding: 0 2px;
+    }
     .fourth_page,
     .sixth_page,
     .fifth_page,
@@ -400,7 +459,7 @@ span.text-center.contact_inner3.source_light {
     .carousel-control svg {
         margin-top: 14em;
     }
-    img.top_button{
-      right: 0;
+    img.top_button {
+        right: 0;
     }
 }

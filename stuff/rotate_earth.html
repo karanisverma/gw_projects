@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img class="image" src="images/rotate_earth.png" alt="">
+</body>
+<style type="text/css">
+	.image {
+	    position: absolute;
+	    top: 60%;
+    	width: 70%;
+    	left: -14%;
+		transform-origin: 30% 55%;
+	    margin:-60px 0 0 -60px;
+	    -webkit-animation:spin 4s linear infinite;
+	    -moz-animation:spin 4s linear infinite;
+	    animation:spin 26s linear infinite;
+	}
+	@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+</style>
+</html>
